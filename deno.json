@@ -1,11 +1,12 @@
 {
-    "imports": {
-        "std/": "https://deno.land/std@0.207.0/",
-        "oak/": "https://deno.land/x/oak@v11.1.0/",
-        "oauth2_client/": "https://deno.land/x/oauth2_client@v1.0.2/",
-        "oak_sessions/": "https://deno.land/x/oak_sessions@v4.1.11/"
-    },
-    "tasks": {
-        "dev": "deno run --watch --allow-net --allow-read main.ts"
-    }
+  "imports": {
+    "std/": "https://deno.land/std@0.207.0/",
+    "oak/": "https://deno.land/x/oak@v11.1.0/",
+    "oauth2_client/": "https://deno.land/x/oauth2_client@v1.0.2/",
+    "oak_sessions/": "https://deno.land/x/oak_sessions@v4.1.11/",
+    "axios": "npm:axios"
+  },
+  "tasks": {
+    "dev": "deno run --watch --allow-net --allow-read --allow-sys src/main.ts"
+  }
 }
